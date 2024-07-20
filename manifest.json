@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "一键搜索",
+  "description": "同时在多个搜索引擎搜索",
+  "version": "1.0.0",
+  "icons": {
+    "16": "images/logo16.png",
+    "128": "images/logo128.png"
+  },
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "minimum_chrome_version": "91",
+  "omnibox": {
+    "keyword": "mutis"
+  },
+  "permissions": ["storage"],
+  "host_permissions": ["https://extension-tips.glitch.me/*"]
+ 
+}
